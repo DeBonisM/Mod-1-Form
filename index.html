@@ -16,31 +16,54 @@
         <br />
         <br />
         <div class="box">
-          <form>
+          <form action="/action.php" target="_blank">
             <!-- <label for="Name">First Name</label><br /> -->
-            <input type="Name" placeholder="First Name" /> <br /><br />
-            <input type="Name" placeholder="Last Name" />
+            <input name="firstname" type="Name" placeholder="First Name" />
+            <br /><br />
+            <input name="lastname" type="Name" placeholder="Last Name" />
             <br /><br />
 
-            <input type="radio" />
-            <label>Male</label>
+            <input name="gender" id="male" type="radio" value="male" />
+            <label for="male">Male</label>
 
-            <input type="radio" />
-            <label>Female</label>
+            <input name="gender" id="female" type="radio" value="female" />
+            <label for="female">Female</label>
 
-            <input type="radio" />
-            <label>Other</label>
+            <input name="gender" id="other" type="radio" value="other" />
+            <label for="other">Other</label>
 
             <br /><br />
 
-            <input type="email" placeholder="email" /> <br /><br />
+            <input type="email" placeholder="email" />
+            <br /><br />
+
             <label for="number">Phone Number</label>
             <input id="number" type="number" size="3" placeholder="xxx" />
             <br /><br />
             <label for="date">Date of Birth</label> <br /><br />
             <input id="date" type="date" />
             <br /><br /><br />
-            <input type="submit" name="submit" id="submit" />
+
+            <label for="income">Annual Income</label><br />
+            <select name="income" id="income">
+              <option value="1">$1</option>
+              <option value="2">$2</option>
+              <option value="3">$3</option>
+              <option value="4">$4</option>
+              <option value="5">$5</option>
+            </select>
+
+            <br /><br />
+
+            <label for="comments">Why you should make more $/year</label> <br />
+            <textarea name="comments" placeholder="Vent here..."></textarea>
+            <br /><br />
+            <input type="checkbox" name="legal" id="checkbox" />
+            <label for="legal"> Click this box if you understand </label>
+
+            <br /><br /><br />
+
+            <input type="submit" />
           </form>
         </div>
       </div>
