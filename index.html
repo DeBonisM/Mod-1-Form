@@ -10,17 +10,18 @@
   <body>
     <div class="container">
       <div class="flex">
-        <br />
-
         <h3>Registration Form</h3>
         <br />
+        <hr />
+        <br />
+        <h4>Tell us everything</h4>
         <br />
         <div class="box">
           <form action="/action.php" target="_blank">
             <!-- <label for="Name">First Name</label><br /> -->
-            <input name="firstname" type="Name" placeholder="First Name" />
+            <input name="firstname" type="text" placeholder="First Name" />
             <br /><br />
-            <input name="lastname" type="Name" placeholder="Last Name" />
+            <input name="lastname" type="text" placeholder="Last Name" />
             <br /><br />
 
             <input name="gender" id="male" type="radio" value="male" />
@@ -34,15 +35,45 @@
 
             <br /><br />
 
-            <input type="email" placeholder="email" />
+            <input type="email" placeholder="Email" />
             <br /><br />
 
-            <label for="number">Phone Number</label>
-            <input id="number" type="number" size="3" placeholder="xxx" />
+            <label for="number">Phone Number</label><br />
+            <input
+              id="number"
+              type="text"
+              placeholder="xxx"
+              maxlength="3"
+              size="1"
+            />
+            <input
+              id="number"
+              type="text"
+              placeholder="xxx"
+              maxlength="3"
+              size="1"
+            /><input
+              id="number"
+              type="text"
+              placeholder="xxx"
+              maxlength="3"
+              size="1"
+            />
+
             <br /><br />
-            <label for="date">Date of Birth</label> <br /><br />
+
+            <label for="date">Date of Birth</label><br />
             <input id="date" type="date" />
-            <br /><br /><br />
+
+            <br /><br />
+
+            <label for="household">Household Size</label><br />
+            <input
+              type="text"
+              id="household"
+              size="1"
+              maxlength="10"
+            /><br /><br />
 
             <label for="income">Annual Income</label><br />
             <select name="income" id="income">
@@ -56,12 +87,26 @@
             <br /><br />
 
             <label for="comments">Why you should make more $/year</label> <br />
-            <textarea name="comments" placeholder="Vent here..."></textarea>
+            <textarea
+              rows="5"
+              cols="30"
+              name="comments"
+              placeholder="Vent here..."
+            ></textarea>
             <br /><br />
-            <input type="checkbox" name="legal" id="checkbox" />
-            <label for="legal"> Click this box if you understand </label>
 
-            <br /><br /><br />
+            <label for="password">Password*</label><br />
+            <input type="password" id="password" />
+            <br />
+            <label for="confirmpassword">Confirm Password*</label><br />
+            <input type="password" id="confirmpassword" /> <br /><br />
+            <input type="checkbox" name="legal" id="checkbox" />
+            <label for="legal">
+              Click this box if you understand
+              <span><a href="./">Here if you don't.</a></span>
+            </label>
+
+            <br /><br />
 
             <input type="submit" />
           </form>

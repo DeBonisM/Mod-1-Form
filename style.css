@@ -13,10 +13,10 @@
 }
 
 .flex {
-  width: 250px;
-  height: 500px;
+  width: auto;
+  height: auto;
   background-color: rgba(193, 193, 193, 0.1);
-  /* border: 5px black solid; */
+  /* border: 1px black dotted; */
 }
 
 .box {
